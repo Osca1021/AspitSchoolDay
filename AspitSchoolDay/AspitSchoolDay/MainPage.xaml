@@ -7,16 +7,17 @@
              BackgroundColor="#194549">
 
     <AbsoluteLayout>
-        <Frame BackgroundColor="#29675a" IsClippedToBounds="False"
-               AbsoluteLayout.LayoutBounds="0, 0, 0.15, 1" AbsoluteLayout.LayoutFlags="All"/>
+        <Image VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Source="aspit_logo.png"
+               AbsoluteLayout.LayoutBounds="0.5, 0.08" AbsoluteLayout.LayoutFlags="PositionProportional"/>
         <StackLayout>
+
             <CarouselView ItemsSource="{Binding Texts}"
                         IndicatorView="indicatorDots">
                 <CarouselView.ItemTemplate>
                     <DataTemplate x:DataType="x:String">
                         <StackLayout>
                             <Label Text="{Binding .}" TextColor="White" HorizontalOptions="Center"
-                                    VerticalOptions="CenterAndExpand" FontSize="25" Margin="30"
+                                    VerticalOptions="CenterAndExpand" FontSize="25" Margin="45"
                                     HorizontalTextAlignment="Center" FontFamily="sofia-pro-medium" />
                         </StackLayout>
 
@@ -29,6 +30,8 @@
                            HorizontalOptions="Center"
                            Margin="0,0,0,30"/>
         </StackLayout>
+        <Frame BackgroundColor="#29675a" IsClippedToBounds="False"
+               AbsoluteLayout.LayoutBounds="0, 0, 0.08, 1" AbsoluteLayout.LayoutFlags="All"/>
     </AbsoluteLayout>
 
 </ContentPage>
