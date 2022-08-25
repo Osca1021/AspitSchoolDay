@@ -20,7 +20,7 @@ namespace AspitSchoolDay.Droid
 
             Window.Attributes.LayoutInDisplayCutoutMode = LayoutInDisplayCutoutMode.ShortEdges;
 
-            Window.SetDecorFitsSystemWindows(false);
+            WindowCompat.SetDecorFitsSystemWindows(Window, false);
             var controller = new WindowInsetsControllerCompat(Window, Window.DecorView);
             controller.Hide(WindowInsetsCompat.Type.SystemBars());
             controller.SystemBarsBehavior = WindowInsetsControllerCompat.BehaviorShowTransientBarsBySwipe;
