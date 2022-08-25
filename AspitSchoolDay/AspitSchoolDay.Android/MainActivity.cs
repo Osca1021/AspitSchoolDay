@@ -32,5 +32,14 @@ namespace AspitSchoolDay.Droid
 
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
+
+        protected override void OnResume()
+        {
+            base.OnResume();
+            WindowCompat.SetDecorFitsSystemWindows(Window, false);
+            var controller = new WindowInsetsControllerCompat(Window, Window.DecorView);
+            controller.Hide(WindowInsetsCompat.Type.SystemBars());
+            controller.SystemBarsBehavior = WindowInsetsControllerCompat.BehaviorShowTransientBarsBySwipe;
+        }
     }
 }
