@@ -25,6 +25,8 @@ namespace AspitSchoolDay.Droid
             controller.Hide(WindowInsetsCompat.Type.SystemBars());
             controller.SystemBarsBehavior = WindowInsetsControllerCompat.BehaviorShowTransientBarsBySwipe;
 
+            Window.AddFlags(WindowManagerFlags.KeepScreenOn);
+
         }
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
         {
@@ -40,6 +42,8 @@ namespace AspitSchoolDay.Droid
             var controller = new WindowInsetsControllerCompat(Window, Window.DecorView);
             controller.Hide(WindowInsetsCompat.Type.SystemBars());
             controller.SystemBarsBehavior = WindowInsetsControllerCompat.BehaviorShowTransientBarsBySwipe;
+
+            Window.AddFlags(WindowManagerFlags.KeepScreenOn);
         }
     }
 }

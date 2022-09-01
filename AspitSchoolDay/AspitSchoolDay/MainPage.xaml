@@ -18,15 +18,8 @@
                         <StackLayout>
                             <Label TextColor="White" HorizontalOptions="Center"
                                     VerticalOptions="CenterAndExpand" FontSize="25" Margin="45"
-                                    HorizontalTextAlignment="Center" >
-                                <Label.FormattedText>
-                                    <FormattedString>
-                                        <FormattedString.Spans>
-                                            <Span Text="{Binding .}" FontAttributes="Italic" FontSize="25" FontFamily="serif" />
-                                            <Span Text="&#10;&#10;&lt;&lt;&#160;&#160;Swipe&#160;&#160;>>" FontAttributes="None" FontSize="25" FontFamily="sans-serif" />
-                                        </FormattedString.Spans>
-                                    </FormattedString>
-                                </Label.FormattedText>
+                                    HorizontalTextAlignment="Center"
+                                    Text="{Binding .}" FontAttributes="Italic" FontFamily="serif">
                             </Label>
                         </StackLayout>
 
