@@ -12,11 +12,12 @@ namespace AspitSchoolDay
         {
             List<string> newTexts = new List<string>
             {
-                "This page 1",
-                "is page 2",
-                "page 3: Det at programmere på aspit er et meget spændende job for alle dem der godt kan lide at programmere. man lærer også at programmere hvis det er det som man gerne vil.",
-                "second to last page 4",
-                "last page 5"
+                @"Programmering bruges i mange typer applikationer
+F.eks.:",
+                "Apps til telefoner og tablets",
+                "Software til computere",
+                "Smarte køleskabe, vaskemaskiner m.m.",
+                "Denne App er programmeret i sproget C# (C Sharp), ét af de sprog der undervises i, i faget Softwarekonstruktion"
             };
 
             Texts = newTexts;
